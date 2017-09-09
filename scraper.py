@@ -26,7 +26,10 @@ def get_categories(html):
     categories = [elem.text_content() for elem in html.xpath("//div[contains(@class,'event_body')]/p")]
     groupings = []
     for category_set in categories:
-        grouping = category_set.split("Category:")[1].split(",")
+        try:
+            grouping = category_set.split("Category:")[1].split(",")
+        except:
+            continue
         grouping = [elem.strip() for elem in grouping]
         grouping = [elem.replace("!","") for elem in grouping]
         groupings.append(",".join(grouping))
@@ -55,6 +58,4 @@ def scrape(num_pages_to_scrape):
 
 
 if __name__ == '__main__':
-    scrape(50)
-    
-    
+    scrape(75)

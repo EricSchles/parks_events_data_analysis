@@ -1,13 +1,10 @@
 1) Time series analysis - 
 
-First bin the events by month and look at how the number of events change month to month over all.
+Once I get more data - First bin the events by month and look at how the number of events change month to month over all.
 
-Then segment the data by event type, some initial thoughts here:
+See how number of events change day over day.
 
-* Sports
-* movie
-* kids stuff
-* etc.
+Then segment the data by event type.
 
 Show the how the frequency of each of these types of events changes over time.
 
