@@ -1,0 +1,17 @@
+event_links:
+
+	Description: this is a set of links to specific links to each event that the parks dept puts on their website. 
+
+	Data Type: String
+
+dates:
+	
+	Description: this is the date each event occured or will occur
+
+	Data Type: Datetime Object
+
+event_titles:
+
+	Description: this is the title of the event
+
+	Data Type: String

@@ -1,0 +1,29 @@
+1) Time series analysis - 
+
+First bin the events by month and look at how the number of events change month to month over all.
+
+Then segment the data by event type, some initial thoughts here:
+
+* Sports
+* movie
+* kids stuff
+* etc.
+
+Show the how the frequency of each of these types of events changes over time.
+
+Next we'll predict how many of each event will occur over the next three months and how many events will occur in aggregate.
+
+2) Location plotting
+
+Show on a map where these events occur, allow for filtering by event type (just loads a different map, no need to be fancy).
+
+Do some clustering analysis by doing the following - The question is how likely is an event of a given type to occur in a given place.  This will be a textual output of the following form:
+
+* Park name:
+	Event type 1: probability of event occurring
+	Event type 2: probability of event occurring
+	etc.
+
+Then let's predict event type based on location, time of year, and time of day.
+
+3) 
