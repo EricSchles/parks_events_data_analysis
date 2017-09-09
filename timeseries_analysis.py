@@ -39,7 +39,7 @@ def plot_data(df, title):
     date_freq.plot(title=title)
     plt.show()
 
-df = pd.read_csv("parks_events_data.csv")
+df = pd.read_csv("parks_events_data.csv", index_col = False)
 plot_data(df, "overall")
 categories = get_categories(df["categories"])
 segmentation = segment_timeseries_by_categories(df, categories)

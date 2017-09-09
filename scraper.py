@@ -19,6 +19,7 @@ def get_events_data(page: int):
     dates = [parse_date(event_link) for event_link in event_links]
     event_links = ["https://www.nycgovparks.org"+event_link for event_link in event_links]
     categories = get_categories(html)
+    # TODO - scrape park name
     return event_links, dates, event_titles, categories
     
     
@@ -54,7 +55,7 @@ def scrape(num_pages_to_scrape):
         "categories": categories
     }
     df = pd.DataFrame(data)
-    df.to_csv("parks_events_data.csv")
+    df.to_csv("parks_events_data.csv", index = False)
 
 
 if __name__ == '__main__':
